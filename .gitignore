@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# Model & data (too large for GitHub — use Git LFS or regenerate)
+# Uncomment the next line if you want to exclude the model:
+# model.pkl
+
+# Sensitive credentials — NEVER commit this
+oauth_config.json
+.env
+secrets.toml
+.streamlit/secrets.toml
+
+# MS Office temp files
+~$*
+
+# Snapshots / IDE
+.snapshots/
+.gemini/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Byte-compiled
+*.egg-info/
+dist/
+build/
