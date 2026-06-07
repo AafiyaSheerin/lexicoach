@@ -414,7 +414,7 @@ if get_param(params, "page") == "mock_google_auth":
     <div class="google-card">
         <h1 style="font-size:24px;font-weight:400;text-align:center;color:#202124;">Choose an account</h1>
         <p style="text-align:center;color:#202124;">to continue to <b style="color:#4A148C;">LexiCoach</b></p>
-        <a href="?logged_in=true&email={custom_email}" target="_parent" style="text-decoration:none;">
+        <a href="?logged_in=true&email={custom_email}" target="_top" style="text-decoration:none;">
             <div class="account-row">
                 <div class="avatar" style="background-color:#1A73E8;">{first_char}</div>
                 <div>
@@ -675,7 +675,7 @@ if not st.session_state['logged_in']:
                 # Google Sign In button
                 st.markdown(f"""
                 <div style="margin-bottom:15px;text-align:center;">
-                    <a href="{google_auth_url}" target="_parent" style="text-decoration:none;display:block;width:100%;">
+                    <a href="{google_auth_url}" target="_top" style="text-decoration:none;display:block;width:100%;">
                         <div style="display:flex;align-items:center;justify-content:center;gap:10px;border:1px solid #CFD8DC;border-radius:4px;padding:10px 16px;background-color:#FFFFFF;cursor:pointer;box-sizing:border-box;width:100%;">
                             <svg width="18" height="18" viewBox="0 0 24 24">
                                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -775,7 +775,7 @@ if not st.session_state['logged_in']:
                 st.markdown("<div style='text-align:center;margin:15px 0;font-size:13px;color:#757575;'>— or —</div>", unsafe_allow_html=True)
 
                 st.markdown(f"""
-                <a href="{google_auth_url}" target="_parent" style="text-decoration:none;display:block;width:100%;">
+                <a href="{google_auth_url}" target="_top" style="text-decoration:none;display:block;width:100%;">
                     <div style="display:flex;align-items:center;justify-content:center;gap:10px;border:1px solid #CFD8DC;border-radius:4px;padding:10px 16px;background-color:#FFFFFF;cursor:pointer;box-sizing:border-box;width:100%;">
                         <svg width="18" height="18" viewBox="0 0 24 24">
                             <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
